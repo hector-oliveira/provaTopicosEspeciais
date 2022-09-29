@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./main.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Máquina de vendas</h1>
+    </header>
+    <div>
+      <section class="produtos">
+      <div>
+        <ul>
+          <div class="content">
+            <li>Produto <spam class="span-prod-1">1</spam></li>
+            <p>R$ <span class="val valor-1">1.50</span> - Estoque <span class="prod-1">10</span></p>
+          </div>
+            
+          <div class="content">
+            <li>Produto <spam class="span-prod-2">2</spam></li>
+            <p>R$ <span class="val valor-2">3.50</span> - Estoque <span class="prod-2">9</span></p>
+          </div>
+            
+          <div class="content">
+            <li>Produto <spam class="span-prod-3">3</spam></li>
+            <p>R$ <span class="val valor-3">0.75</span> - Estoque <span class="prod-3">2</span></p>
+          </div>
+            
+          <div class="content">
+            <li>Produto <spam class="span-prod-4">4</spam></li>
+            <p>R$ <span class="val valor-4">0.50</span> - Estoque <span class="prod-4">1</span></p>
+          </div>
+            
+          <div class="content">
+            <li>Produto <spam class="span-prod-5">5</spam></li>
+            <p>R$ <span class="val valor-5">2.50</span> - Estoque <span class="prod-5">3</span></p>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <section class="prod-selecionado">
+      <header>
+        <h2>Produto Selecionado</h2>
+      </header>
+      <div class="container">
+        <div>
+          <button class="btn-mais-menos aumentar">+</button>
+          <p class="num-prod-selecionado">1</p>
+          <button class="btn-mais-menos diminuir">-</button>
+        </div>
+        <button class="comprar">comprar</button>
+      </div>
+    </section>
+
+
+    <section class="content-saldo">
+      <div class="saldo">
+        <header>
+          <h2>Saldo</h2>
+        </header>
+        <p>
+          R$ <span class="dispay-saldo">5.25</span>
+        </p>
+      </div>
+      <div class="depositar">
+        <header>
+          <h2>Depositar</h2>
+          <p class="valor-para-depositar"></p>
+        </header>
+        <div class="teclado">
+          <div class="trio">
+            <button onclick="numeroPrecionado('1')">1</button>
+            <button onclick="numeroPrecionado('2')">2</button>
+            <button onclick="numeroPrecionado('3')">3</button>
+          </div>
+          <div class="trio">
+            <button onclick="numeroPrecionado('4')">4</button>
+            <button onclick="numeroPrecionado('5')">5</button>
+            <button onclick="numeroPrecionado('6')">6</button>
+          </div>
+          <div class="trio">
+            <button onclick="numeroPrecionado('7')">7</button>
+            <button onclick="numeroPrecionado('8')">8</button>
+            <button onclick="numeroPrecionado('9')">9</button>
+          </div>
+          <div class="trio">
+            <button >del</button>
+            <button onclick="numeroPrecionado('0')">0</button>
+            <button class="confirmar">Confirmar</button>
+          </div>
+          <div class="retirar">Retirar dinheiro</div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+</body>
+</html>
